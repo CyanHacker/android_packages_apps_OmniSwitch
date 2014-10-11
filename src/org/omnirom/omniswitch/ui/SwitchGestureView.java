@@ -1318,9 +1318,6 @@ public class SwitchGestureView implements OnShowcaseEventListener {
             item.setOriginalImage(BitmapUtils.shadow(mContext.getResources(), d));
 
             item.setLabel(mContext.getResources().getString(R.string.immersive_mode_help));
-            item.setAction(new Runnable(){
-                @Override
-                 });
             return item;
         }
         return null;
