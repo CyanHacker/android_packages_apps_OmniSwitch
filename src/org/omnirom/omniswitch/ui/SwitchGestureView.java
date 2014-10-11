@@ -1320,11 +1320,7 @@ public class SwitchGestureView implements OnShowcaseEventListener {
             item.setLabel(mContext.getResources().getString(R.string.immersive_mode_help));
             item.setAction(new Runnable(){
                 @Override
-                public void run() {
-                    if (!mConfiguration.mRestrictedMode){
-                        Utils.toggleImmersiveMode(mContext);
-                    }
-                }});
+                 });
             return item;
         }
         return null;

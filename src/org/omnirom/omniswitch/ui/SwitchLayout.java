@@ -1822,16 +1822,6 @@ public class SwitchLayout implements OnShowcaseEventListener {
                     return true;
                 }});
 
-            mImmersiveModeButton.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    if (!mConfiguration.mRestrictedMode){
-                        Utils.toggleImmersiveMode(mContext);
-                        if (mAutoClose){
-                            hide(false);
-                        }
-                    }
-                }
-            });
             mImmersiveModeButton.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View v) {
